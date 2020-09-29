@@ -9,7 +9,6 @@ let app = express();
 let db;
 
 const uri = config.uri;
-//const uri = 'mongodb+srv://niyak:byt456UN@users-api.w3jjo.mongodb.net/usersAPI?retryWrites=true&w=majority';
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(bodyParser.json());
